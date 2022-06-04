@@ -200,6 +200,10 @@ menubar.active {
 }
 
 .product img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
   transition: 0.3s all;
 }
 
@@ -244,8 +248,18 @@ menubar.active {
   background-color: #fb774b;
   border: 0;
 }
-footer {
-  background-color: #222222;
+
+body > nav.container > ul > li.page-item.active > a {
+  background-color: #000;
+  border: 1px solid #d8d8d8;
+}
+
+body > nav.container > ul > li:nth-child(n):hover > a {
+  background-color: #fb774b;
+  color: #fff;
+}
+.pagination a {
+  color: #000;
 }
 footer h5 {
   color: #d8d8d8;
